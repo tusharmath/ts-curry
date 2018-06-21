@@ -1,0 +1,5 @@
+*.ts
+*.tgz
+test/
+!*.d.ts
+*.yml
