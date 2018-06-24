@@ -9,8 +9,8 @@ const _curry = (fn: Function) => {
 
 // Types
 export type CurriedFunction2<P0, P1, R> = {
-  (p0: P0, p1: P1): R
   (p0: P0): {(p1: P1): R}
+  (p0: P0, p1: P1): R
 }
 
 export type CurriedFunction3<P0, P1, P2, R> = {
