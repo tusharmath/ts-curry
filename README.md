@@ -1,4 +1,4 @@
-# ts-curry
+# ts-curry [![Build Status](https://travis-ci.com/tusharmath/ts-curry.svg?branch=master)](https://travis-ci.com/tusharmath/ts-curry)
 Currying utility for typescript.
 
 
