@@ -3,3 +3,4 @@
 test/
 !*.d.ts
 *.yml
+.idea/
