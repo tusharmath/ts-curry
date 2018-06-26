@@ -1,7 +1,6 @@
 import * as assert from 'assert'
 import {curry4} from '../'
 import {describe, it} from 'mocha'
-import {CurriedFunction2, curry2} from '../index'
 
 describe('curry4', () => {
   it('should return a curried function', () => {
