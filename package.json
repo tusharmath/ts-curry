@@ -6,7 +6,6 @@
   "scripts": {
     "test": "mocha --require=ts-node/register test/*.ts",
     "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once",
     "prepublishOnly": "node_modules/.bin/tsc -d",
     "prettier": "git ls-files | grep '.ts$' | xargs prettier --write --config=.prettierrc"
   },
@@ -18,7 +17,6 @@
     "mocha": "^5.2.0",
     "prettier": "^1.13.7",
     "semantic-release": "^15.6.0",
-    "travis-deploy-once": "^5.0.0",
     "ts-node": "^6.1.2",
     "typescript": "^2.9.2"
   },
