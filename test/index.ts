@@ -1,5 +1,5 @@
 import * as assert from 'assert'
-import {curry4} from '../'
+import {curry4, curry2} from '..'
 import {describe, it} from 'mocha'
 
 describe('curry4', () => {
@@ -7,6 +7,9 @@ describe('curry4', () => {
     const fn = (a: string, b: string, c: string, d: string) =>
       [a, b, c, d].join('')
     const curried4 = curry4(fn)
+
+    // 5
+    assert.strictEqual((<any>curried4)('a', 'b', 'c', 'd', 'e'), 'abcd')
 
     // 4
     assert.strictEqual(curried4('a', 'b', 'c', 'd'), 'abcd')

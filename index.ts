@@ -1,6 +1,6 @@
 const _curry = (fn: Function) => {
   const curried = function(...t: any[]) {
-    return t.length === fn.length
+    return t.length >= fn.length
       ? fn.call(this, ...t)
       : curried.bind(this, ...t)
   }
