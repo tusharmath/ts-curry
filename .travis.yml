@@ -1,18 +1,13 @@
 language: node_js
 cache:
-  yarn: true
   directories:
-  - ~/.npm
+    - ~/.npm
 notifications:
   email: false
-jobs:
-  include:
-  - stage: release
-    node_js: stable
-    deploy:
-      provider: script
-      skip_cleanup: true
-      script:
-        - npm run semantic-release
-script:
-- yarn test
+node_js:
+  - 'stable'
+after_success:
+  - npm run travis-deploy-once "npm run semantic-release"
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
